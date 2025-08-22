@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/portafolio/static/css/main.7e11ff1c.css",
+    "main.js": "/portafolio/static/js/main.2ae23dce.js",
+    "static/js/453.a9c87868.chunk.js": "/portafolio/static/js/453.a9c87868.chunk.js",
+    "static/media/mi-foto.png": "/portafolio/static/media/mi-foto.a6b5e7810733ebba9880.png",
+    "static/media/universidad-bg.jpg": "/portafolio/static/media/universidad-bg.067b329147b58a2d40c3.jpg",
+    "index.html": "/portafolio/index.html",
+    "main.7e11ff1c.css.map": "/portafolio/static/css/main.7e11ff1c.css.map",
+    "main.2ae23dce.js.map": "/portafolio/static/js/main.2ae23dce.js.map",
+    "453.a9c87868.chunk.js.map": "/portafolio/static/js/453.a9c87868.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e11ff1c.css",
+    "static/js/main.2ae23dce.js"
+  ]
+}
