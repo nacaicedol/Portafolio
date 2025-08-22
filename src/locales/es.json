@@ -1,0 +1,96 @@
+{
+"role": "Desarrollador de software",
+  "description": "Soy un desarrollador de software apasionado por crear soluciones eficientes y escalables. Me gusta trabajar con tecnologías modernas, aprender continuamente y aportar valor a través del código.",
+  "email": "Correo",
+  "cv": {
+  "phrase": "Descarga mi CV para conocer más de mi",
+  "download": "Download CV"
+},
+  "experience": {
+    "title": "Experiencia",
+    "fullstack": "Desarrollador Fullstack",
+    "dev": "Desarrollador",
+    "present": "ahora",
+    "infometrika": {
+      "tasks": [
+        "Manejo de bases de datos relacionales para consultas de registros, geometrías y formularios.",
+        "Integración de servicios de terceros y APIs en aplicaciones (React, JavaScript).",
+        "Construcción y mantenimiento de lógica y funcionalidad del servidor en Python.",
+        "Creación y mantenimiento de componentes reutilizables para front-end en VueJS.",
+        "Colaboración con diseñadores, desarrolladores y equipos para asegurar la implementación exitosa.",
+        "Participación en reuniones para discutir requisitos, problemas técnicos y buenas prácticas."
+      ]
+    },
+    "equaltech": {
+      "tasks": [
+        "Diseño y desarrollo de aplicaciones front-end responsivas con React.",
+        "Construcción y mantenimiento de servicios back-end y APIs integrando bases de datos relacionales y NoSQL.",
+        "Trabajo en entorno Microsoft: C#, APIs, WebApps y Webhooks.",
+        "Colaboración con equipos multifuncionales para entregar software de alta calidad.",
+        "Implementación de buenas prácticas en Git, testing, CI/CD para confiabilidad del sistema."
+      ]
+    }
+  },
+    "projects": {
+    "title": "Proyectos",
+    "view": "Ver más",
+    "codedoc": {
+      "year": "2024",
+      "name": "CodeDocViewer",
+      "role": "Documentador de código",
+      "desc": "Aplicación web con frontend en React y backend en Django REST Framework, integrado con ANTLR. Permite procesar archivos de código Python 3 para documentar y generar diagramas de flujo, además de archivos de modelos de datos de Django REST Framework para crear diagramas de clases."
+    },
+    "ecommerce": {
+      "year": "2023",
+      "name": "E-commerce Shopify",
+      "role": "Tienda en línea",
+      "desc": "Plataforma de comercio electrónico desarrollada en Shopify, con personalización de temas y optimización de la experiencia de compra. Integración de pasarelas de pago y configuración de inventario."
+    }
+  }
+  ,
+  "skills": {
+    "title": "Habilidades",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Bases de Datos",
+      "tools": "Herramientas"
+    },
+    "items": {
+      "frontend": [
+        { "name": "React", "level": 85 },
+        { "name": "JavaScript", "level": 90 },
+        { "name": "HTML/CSS", "level": 95 }
+      ],
+      "backend": [
+        { "name": "Python", "level": 88 },
+        { "name": "Django", "level": 80 },
+        { "name": "ASP.NET Core", "level": 75 }
+      ],
+      "database": [
+        { "name": "PostgreSQL", "level": 85 },
+        { "name": "SQL Server", "level": 80 },
+        { "name": "MongoDB", "level": 70 }
+      ],
+      "tools": [
+        { "name": "Git/GitHub", "level": 90 },
+        { "name": "Docker", "level": 75 },
+        { "name": "Power BI", "level": 80 }
+      ]
+    }
+  },
+  "education": {
+    "title": "Formación Académica",
+    "degreeTitle": "Título Universitario",
+    "degree": "Universidad Nacional de Colombia — Ingeniería de Sistemas y Computación",
+    "certificates": "Certificados"
+  },
+   "contact": {
+    "title": "Contáctame",
+    "subtitle": "¡Me encantaría saber de ti! Construyamos algo increíble juntos.",
+    "email": "Correo",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "copyright": "© 2025 Nicolas Caicedo. Todos los derechos reservados."
+  }
+}

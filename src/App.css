@@ -1,0 +1,771 @@
+/* =========================
+   Paleta de Colores
+========================= */
+:root {
+  --color-dark: #2e2e2e;
+  --color-dark-alt: #3a3a3a;
+  --color-light: #d9d2c7;
+  --color-accent: #c4b7a6;
+  --color-text: #f5f5f5;
+  --color-dark-text: #3a3a3a;
+}
+
+/* =========================
+   Fondo general
+========================= */
+body {
+  font-family: "Inter","Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif;
+  background: var(--color-dark);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* =========================
+   Sección principal
+========================= */
+section.text-center {
+  background: var(--color-dark);
+  color: var(--color-text);
+
+  /* Ocupa toda la pantalla */
+  min-height: 100vh;
+  width: 100%;
+
+  /* Centrado de contenido */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* =========================
+   Responsividad
+========================= */
+section.text-center h1,
+section.text-center p {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  section.text-center {
+    padding: 1.5rem;
+  }
+
+  section.text-center h1 {
+    font-size: 2rem;
+  }
+
+  section.text-center p {
+    font-size: 1rem;
+  }
+}
+
+
+/* Imagen de fondo con transparencia */
+section.text-center::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 5%;
+  width: 300px;
+  height: 100%;
+  background: url("/public/mi-foto.png") no-repeat center right;
+  background-size: contain;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+/* =========================
+   Títulos
+========================= */
+section.text-center h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+section.text-center .role {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--color-light);
+  margin-bottom: 2rem;
+}
+
+/* =========================
+   Botones Idioma
+========================= */
+/* Contenedor del switch */
+.lang-switcher {
+  position: fixed;
+  top: 1rem;
+  right: 1.5rem;
+  display: flex;
+  gap: 0.6rem;
+  z-index: 1000;
+}
+
+/* Botones de idioma */
+.btn-lang {
+  background: var(--color-dark-alt);
+  border: none;
+  color: var(--color-text);
+  padding: 0.4rem 0.6rem;
+  border-radius: 50%;
+  font-size: 1.3rem; /* tamaño banderas */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Hover */
+.btn-lang:hover {
+  background: var(--color-accent);
+  color: var(--color-dark);
+  transform: translateY(-2px);
+}
+
+/* Idioma activo */
+.btn-lang.active {
+  background: var(--color-accent);
+  color: var(--color-dark);
+  font-weight: bold;
+  transform: scale(1.1);
+}
+
+/* =========================
+   Botones de redes
+========================= */
+.btn-dark-gray {
+  background: var(--color-dark-alt);
+  border: none;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-dark-gray:hover {
+  background: var(--color-accent);
+  color: var(--color-dark);
+  transform: scale(1.1);
+}
+
+/* =========================
+   Caja de email
+========================= */
+.email-box {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.email-label {
+  background: var(--color-dark-alt);
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: var(--color-text);
+  letter-spacing: 0.5px;
+}
+
+/* Botones de acción email */
+.email-actions {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.email-actions button,
+.email-actions a {
+  background: var(--color-dark-alt);
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.email-actions button:hover,
+.email-actions a:hover {
+  background: var(--color-accent);
+  color: var(--color-dark);
+  transform: scale(1.1);
+}
+
+/* =========================
+   Descripción personal
+========================= */
+.description {
+  margin-top: 3rem;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--color-light);
+  line-height: 1.6;
+  text-align: center;
+}
+/* =========================
+   Hero
+========================= */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: var(--color-light-alt);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: var(--color-muted);
+  max-width: 600px;
+}
+
+/* =========================
+   Botones con iconos
+========================= */
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--color-dark-gray); /* de tu paleta */
+  color: var(--color-beige); /* contraste */
+  font-size: 24px;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.1);
+  background-color: var(--color-accent); /* tono más vivo de la paleta */
+}
+
+/*
+====================
+CV
+====================
+*/
+.cv-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.cv-phrase {
+  font-size: 1.1rem;
+  color: #e6dfd5; 
+  font-weight: 400;
+}
+
+.btn-cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #3a3a3a;
+  color: #f5f5f5;
+  padding: 0.8rem 1.4rem;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.btn-cv .icon {
+  font-size: 1.3rem;
+  color: #e6dfd5; /* beige PDF */
+}
+
+.btn-cv .download-icon {
+  font-size: 1.2rem;
+  color: #f5f5f5;
+  transition: transform 0.3s ease;
+}
+
+.btn-cv:hover {
+  background: #5a5a5a;
+  transform: translateY(-2px);
+}
+
+.btn-cv:hover .download-icon {
+  transform: translateY(3px);
+}
+
+/* =========================
+   Experiencia
+========================= */
+.experience-section {
+  min-height: 100vh;
+  padding: 6rem 10%;
+  background: var(--color-light); /* fondo claro */
+  color: var(--color-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-title-dark {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--color-dark);
+}
+
+.experience-card {
+  background: var(--color-accent); /* tarjeta beige-acento */
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+}
+
+.experience-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.experience-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: var(--color-light);
+  padding: 0.5rem;
+}
+
+.experience-info h3 {
+  font-size: 1.5rem;
+  color: var(--color-dark);
+  margin: 0;
+}
+
+.role {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0.3rem 0;
+  color: var(--color-dark-alt);
+}
+
+.date {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.experience-list {
+  padding-left: 1.2rem;
+}
+
+.experience-list li {
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+}
+
+/* =========================
+   Carrusel Tecnologías
+========================= */
+.tech-carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 70px; /* franja inferior */
+  background: rgba(255,255,255,0.3);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.tech-track {
+  display: flex;
+  gap: 4rem;
+  animation: scroll-tech 20s linear infinite;
+    width: max-content;
+}
+
+.tech-track img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.tech-track img:hover {
+  transform: scale(1.2);
+}
+
+/* Animación de scroll infinito */
+@keyframes scroll-tech {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/* =========================
+   Secciones de contenido
+========================= */
+.projects-section {
+  min-height: 100vh;
+  padding: 6rem 10%;
+  background: var(--color-dark);
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: var(--color-dark-alt);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 1.5rem;
+}
+
+.project-info h3 {
+  font-size: 1.4rem;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+.project-info .role {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.project-info .desc {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.tech-icons {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.tech-icons img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.tech-icons img:hover {
+  transform: scale(1.2);
+}
+
+.btn {
+  display: inline-block;
+  background: var(--color-accent);
+  color: var(--color-dark);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+/* =========================
+   Sección de Habilidades
+========================= */
+.skills-section {
+  background-color: var(--color-light); /* Fondo claro */
+  border-radius: 12px;
+  padding: 2rem;
+  color: var(--color-dark);
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-dark);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.skill-card {
+  background: var(--color-text);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s;
+  cursor: pointer;
+  padding: 1.2rem;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.12);
+}
+
+.skill-card.active {
+  border: 2px solid var(--color-accent);
+}
+
+.skill-category {
+  font-weight: bold;
+  color: var(--color-dark-alt);
+  margin-bottom: 0.5rem;
+}
+
+.skill-summary {
+  font-size: 0.9rem;
+  color: var(--color-dark-alt);
+  font-style: italic;
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-item {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.skill-icon {
+  font-size: 1.2rem;
+  color: var(--color-accent);
+}
+
+.skill-item span {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.progress-bar {
+  flex: 1;
+  background: var(--color-dark-alt);
+  border-radius: 8px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background: var(--color-accent);
+  height: 100%;
+  border-radius: 8px;
+  transition: width 0.6s ease-in-out;
+}
+
+.hero-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.icon {
+  font-size: 2rem;
+  color: var(--color-light);
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.icon:hover {
+  color: var(--color-accent);
+  transform: scale(1.2);
+}
+
+/*
+=========================================
+Educacion
+==========================================
+*/.education-section {
+  background-color: var(--color-dark);
+  color: var(--color-text);
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--color-accent);
+  text-align: center;
+}
+
+.sub-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 1.5rem 0 1rem;
+  color: var(--color-light);
+}
+
+/* Título universitario */
+.degree-card {
+  background-image: url("/public/universidad-bg.jpg"); /* pon aquí una imagen de la universidad */
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.degree-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.degree-text {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--color-text);
+  text-align: center;
+  padding: 0 1rem;
+}
+
+/* Certificados */
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.certificate-card {
+  background-color: var(--color-dark-alt);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.certificate-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 0.8rem;
+}
+
+.certificate-card h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-light);
+}
+
+.certificate-card .institution {
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  color: var(--color-text);
+}
+
+.certificate-card .year {
+  font-size: 0.8rem;
+  color: var(--color-accent);
+}
+/*
+============================================
+footer
+==========================================
+*/
+.contact-section {
+  background-color: #f9f9f9; /* Fondo claro */
+  border-top: 2px solid #e5e5e5;
+}
+
+.contact-section h2 {
+  font-weight: bold;
+}
+
+.contact-section a.btn {
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-section a.btn:hover {
+  background-color: #212529;
+  color: #fff;
+}

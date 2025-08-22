@@ -1,0 +1,99 @@
+
+{
+  "role": "Software Developer",
+  "description": "I am a software developer passionate about creating efficient and scalable solutions. I enjoy working with modern technologies, continuously learning, and delivering value through code.",
+  "email": "Email",
+  "cv": {
+  "phrase": "Download my PDF CV to learn more about me",
+  "download": "Download CV"
+},
+  "experience": {
+    "title": "Experience",
+    "fullstack": "Fullstack Developer",
+    "dev": "Developer",
+    "present": "present",
+    "infometrika": {
+      "tasks": [
+        "Handling relational databases to query records, geometries, and forms.",
+        "Integration of third-party services and APIs into applications (React, JavaScript).",
+        "Build and maintain server logic and functionality using Python.",
+        "Create and maintain reusable front-end components in VueJS.",
+        "Collaborated with designers, developers, and teams to ensure successful implementation.",
+        "Participated in meetings to discuss requirements, technical issues, and best practices."
+      ]
+    },
+    "equaltech": {
+      "tasks": [
+        "Designed and developed responsive front-end applications with React.",
+        "Built and maintained scalable back-end services and APIs with relational & NoSQL databases.",
+        "Worked in a Microsoft environment: C#, APIs, WebApps, Webhooks.",
+        "Collaborated with cross-functional teams to deliver high-quality software.",
+        "Implemented best practices in Git, testing, CI/CD pipelines for system reliability."
+      ]
+    }
+  },
+  "projects": {
+  "title": "Projects",
+  "view": "View more",
+  "codedoc": {
+    "year": "2024",
+    "name": "CodeDocViewer",
+    "role": "Code Documenter",
+    "desc": "Web application with frontend in React and backend in Django REST Framework, integrated with ANTLR. It processes Python 3 source files to document and generate flow diagrams, as well as Django REST Framework data models to create class diagrams."
+  },
+  "ecommerce": {
+    "year": "2023",
+    "name": "E-commerce Shopify",
+    "role": "Online Store",
+    "desc": "E-commerce platform developed in Shopify with theme customization and optimized shopping experience. Integrated payment gateways and inventory management."
+  }
+}
+,
+  "skills": {
+    "title": "Skills",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Databases",
+      "tools": "Tools"
+    },
+    "items": {
+      "frontend": [
+        { "name": "React", "level": 85 },
+        { "name": "JavaScript", "level": 90 },
+        { "name": "HTML/CSS", "level": 95 }
+      ],
+      "backend": [
+        { "name": "Python", "level": 88 },
+        { "name": "Django", "level": 80 },
+        { "name": "ASP.NET Core", "level": 75 }
+      ],
+      "database": [
+        { "name": "PostgreSQL", "level": 85 },
+        { "name": "SQL Server", "level": 80 },
+        { "name": "MongoDB", "level": 70 }
+      ],
+      "tools": [
+        { "name": "Git/GitHub", "level": 90 },
+        { "name": "Docker", "level": 75 },
+        { "name": "Power BI", "level": 80 }
+      ]
+    }
+  },
+  "education": {
+    "title": "Education",
+    "degreeTitle": "University Degree",
+    "degree": "Colombia National University — Systems and Computing Engineering",
+    "certificates": "Certificates"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "I'd love to hear from you! Let's build something amazing together.",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "copyright": "© 2025 Nicolas Caicedo. All rights reserved."
+  }
+}
+
+
